@@ -1,11 +1,11 @@
-def call (String dockerRegistry,
-          String dockerImageTag,
-          String kubernetesDeployment,
-          String kubernetesContainer,
-          String awsCredID,
-          String awsRegion,
-          String eksClusterName,
-          String kubernetesNamespace = 'default') {
+def call(String dockerRegistry,
+         String dockerImageTag,
+         String kubernetesDeployment,
+         String kubernetesContainer,
+         String awsCredID,
+         String awsRegion,
+         String eksClusterName,
+         String kubernetesNamespace = 'default') {
 
     sh """
         if ! command -v aws > /dev/null; then
